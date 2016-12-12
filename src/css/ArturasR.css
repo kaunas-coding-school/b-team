@@ -35,5 +35,5 @@ background-color: orangered;
 
     background-image: url("http://boykinsbasketball.com/wp-content/uploads/2015/10/5451a9bac173c.preview-699.jpg");
     background-repeat: no-repeat;
-    background-clip: content-box;
+    background-size: cover;
 }

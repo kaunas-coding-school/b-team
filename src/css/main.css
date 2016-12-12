@@ -26,3 +26,8 @@ h3{
     font-family: "Arial Black";
     color: darkturquoise;
 }
+html {
+    height: 100%;
+    width: 100%;
+
+}
