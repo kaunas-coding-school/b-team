@@ -18,6 +18,8 @@ ul {
 }
 
 li a{
+    float: left;
+    margin: 25px;
     text-decoration: none;
     color: white;
     font-family: "Segoe Script"
