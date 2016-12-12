@@ -17,3 +17,21 @@ p {
     text-align: left;
     font-family: Consolas;
 }
+ul{
+
+    list-style: none;
+    background-color: blueviolet;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    box-shadow: cadetblue;
+
+}
+li a {
+    text-decoration: none;
+    color: white;
+    font-family: fantasy;
+}
