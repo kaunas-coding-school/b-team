@@ -14,9 +14,10 @@ ul {
 
 }
 
-li {
+li a{
     float: left;
     margin: 50px;
+    font-family: "Segoe Script"
 
 
 }
