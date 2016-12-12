@@ -1,5 +1,6 @@
 body{
      background-color: lightgray;
+    background-image:  url('http://www.computerhope.com/issues/pictures/html.jpg' );
 
  }
 h1{
@@ -11,6 +12,7 @@ p {
     text-align: center;
 }
 img{
+
     width: 500px;
     height: 200px;
 }
