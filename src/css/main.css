@@ -16,7 +16,7 @@ ul {
 
 li {
     float: left;
-    margin: 50px;
+    margin: 10px;
 
 
 }
@@ -25,4 +25,7 @@ h3{
 
     font-family: "Arial Black";
     color: darkturquoise;
+}
+.wraper {
+    margin: 50px 10px 100px;
 }
