@@ -1,8 +1,11 @@
 
 .soccer {
+    width: 100%;
+    height: 100%;
+
     background-image: url("https://blog-blogmediainc.netdna-ssl.com/upload/SportsBlogcom/1473720/0778540001479694311_filepicker.jpg");
     background-repeat: no-repeat;
-    background-clip: content-box;
+    background-size: cover;
 }
 
 .soccer a {
@@ -35,5 +38,5 @@ background-color: orangered;
 
     background-image: url("http://boykinsbasketball.com/wp-content/uploads/2015/10/5451a9bac173c.preview-699.jpg");
     background-repeat: no-repeat;
-    background-clip: content-box;
+    background-size: cover;
 }

@@ -16,7 +16,8 @@ ul {
 
 li {
     float: left;
-    margin: 10px;
+    margin: 50px;
+    font-family: "Segoe Script"
 
 
 }
@@ -28,4 +29,9 @@ h3{
 }
 .wraper {
     margin: 50px 10px 100px;
+}
+html {
+    height: 100%;
+    width: 100%;
+
 }
