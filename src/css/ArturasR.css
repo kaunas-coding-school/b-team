@@ -1,0 +1,39 @@
+
+
+.soccer {
+    background-image: url("https://blog-blogmediainc.netdna-ssl.com/upload/SportsBlogcom/1473720/0778540001479694311_filepicker.jpg");
+
+    
+}
+.soccer a {
+margin: 19px 50px;
+font-family: "Bodoni MT Black";
+    color: aquamarine;
+    text-align: left;
+    text-decoration: dotted;
+
+}
+.soccer p{
+    color: #403aff;
+    font-family: "Bookman Old Style";
+    text-align: center;
+
+}
+
+.Basketball a{
+    font-size:49px ;
+background-color: orangered;
+    color: brown;
+    text-align: right;
+
+}
+
+.Basketball {
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url("http://boykinsbasketball.com/wp-content/uploads/2015/10/5451a9bac173c.preview-699.jpg");
+    background-repeat: no-repeat;
+    background-clip: content-box;
+}

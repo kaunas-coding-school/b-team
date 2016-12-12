@@ -1,0 +1,23 @@
+body{
+    height: 100%;
+    width: 100%;
+
+    color: #dc2ab6;
+}
+ul {
+
+    list-style: none;
+}
+
+li {
+    float: left;
+    margin: 50px;
+
+
+}
+
+h3{
+
+    font-family: "Arial Black";
+    color: darkturquoise;
+}
