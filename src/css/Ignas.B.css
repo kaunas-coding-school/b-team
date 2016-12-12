@@ -1,18 +1,48 @@
-body{
-     background-color: lightgray;
-    background-image:  url('http://www.computerhope.com/issues/pictures/html.jpg' );
+body {
 
- }
-h1{
-    color: #403aff;
-    text-align:center
+    background-color: aliceblue;
+
 }
+
+h1 {
+    color: #403aff;
+    text-align: center
+
+}
+
 p {
     color: darkslateblue;
     text-align: center;
 }
-img{
+
+img {
 
     width: 500px;
     height: 200px;
+    margin: 10px;
+    padding: 10px;
+    float: right;
+}
+a{
+    float: bottom;
+}
+
+ul{
+
+    list-style: none;
+    background-color: black;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    position: fixed;
+    top: 0;
+
+}
+li a{
+    text-decoration: none;
+    color: white;
+
+
+
 }
