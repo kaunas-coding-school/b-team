@@ -1,10 +1,10 @@
 
-
 .soccer {
     background-image: url("https://blog-blogmediainc.netdna-ssl.com/upload/SportsBlogcom/1473720/0778540001479694311_filepicker.jpg");
-
-    
+    background-repeat: no-repeat;
+    background-clip: content-box;
 }
+
 .soccer a {
 margin: 19px 50px;
 font-family: "Bodoni MT Black";
