@@ -1,0 +1,22 @@
+body{
+    background-color: darkgray;
+    color: #dc2ab6;
+}
+
+h3{
+
+    font-family: "Arial Black";
+    color: darkturquoise;
+}
+.soccer {
+
+    color: crimson;
+    text-align: center;
+}
+
+.Basketball{
+
+    color: brown;
+    text-align: right;
+
+}
