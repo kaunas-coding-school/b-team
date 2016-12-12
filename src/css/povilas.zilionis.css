@@ -1,6 +1,6 @@
 body {
     div: background-color #9F0;
-    background-image: url('http://www.planwallpaper.com/static/images/ComputerDesktopWallpapersCollection540_047_inxQEjv.jpg');
+    background-image: url('http://i1.wallpaperscraft.com/image/cupcakes_chocolate_cream_dessert_cocoa_beans_80890_1920x1080.jpg');
     background-repeat: repeat-x;
     background-attachment: scroll;
     background-position: top;
@@ -10,7 +10,10 @@ body {
 
 h1{
     color: darkorange;
+    font-family: Mistral;
 }
 p {
-    color: black;
+    color: white;
+    text-align: left;
+    font-family: Consolas;
 }
