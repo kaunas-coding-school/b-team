@@ -1,7 +1,13 @@
-body{
-    background-color: white;
-
+body {
+    div: background-color: #9F0;
+    background-image: url('http://wallpapercave.com/wp/Nithf7m.jpg');
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    background-position: top;
 }
+
+
+
 h1{
     color: darkorange;
 }
