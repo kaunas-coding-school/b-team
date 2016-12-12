@@ -4,6 +4,8 @@ body {
     background-repeat: repeat-x;
     background-attachment: scroll;
     background-position: top;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -19,19 +21,22 @@ p {
 }
 ul{
 
-    list-style: none;
-    background-color: blueviolet;
+    list-style: circle;
+    background-color: saddlebrown;
     width: 100%;
     padding: 0;
     margin: 0;
     height: 80px;
     position: fixed;
     top: 0;
-    box-shadow: cadetblue;
+    opacity: 0.5;
 
 }
 li a {
     text-decoration: none;
     color: white;
     font-family: fantasy;
+}
+.wraper {
+    margin: 20px;
 }
