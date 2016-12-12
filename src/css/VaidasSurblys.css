@@ -1,0 +1,40 @@
+body {
+    background-color:powderblue;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    text-align:center;
+}
+p {
+    text-align:center;
+    color:red;
+}
+p1 {
+    text-align:left;
+    color:green;
+}
+ul{
+    list-style: none;
+    background-color: #003345;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 36px ;
+    position: fixed;
+    top: 0;
+
+}
+ul li {
+    float: left;
+    margin: 50px 10px 100px 10px;
+
+}
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+wraper. {
+    margin: 20px;
+}
