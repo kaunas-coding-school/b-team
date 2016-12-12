@@ -2,6 +2,9 @@ body {
 
     background-color: aliceblue;
 
+
+
+
 }
 
 h1 {
@@ -24,11 +27,12 @@ img {
     padding: 10px;
     float: right;
 }
-a{
+
+a {
     float: bottom;
 }
 
-ul{
+ul {
 
     list-style: none;
     background-color: blueviolet;
@@ -41,11 +45,9 @@ ul{
     box-shadow: cadetblue;
 
 }
-li a{
+
+li a {
     text-decoration: none;
     color: white;
-    font-family: fantasy;
-
-
-
+    font-family: "Segoe Script"
 }

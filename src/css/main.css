@@ -1,6 +1,8 @@
 body{
     height: 100%;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 ul {
     list-style: none;
@@ -14,9 +16,10 @@ ul {
 
 }
 
-li {
+li a{
     float: left;
     margin: 50px;
+    font-family: "Segoe Script"
 
 
 }
@@ -25,4 +28,9 @@ h3{
 
     font-family: "Arial Black";
     color: darkturquoise;
+}
+html {
+    height: 100%;
+    width: 100%;
+
 }
