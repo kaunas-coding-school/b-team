@@ -1,3 +1,17 @@
+h2 {
+    padding: 30px;
+    margin: 60px;
+    font-family: "Arial Black";
+    color: darkturquoise;
+
+}
+
+.picture img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .soccer {
     width: 100%;
@@ -23,6 +37,22 @@ font-family: "Bodoni MT Black";
 
 }
 
+.links a{
+    font-family: "Bodoni MT";
+    text-decoration: none;
+font-size: 39px;
+    text-align: center;
+color: #99FF00;
+}
+p{
+margin: 30px;
+    padding: 30px;
+   text-align: inherit;
+    text-decoration: underline;
+    text-decoration-color: #403aff;
+
+
+}
 .Basketball a{
     font-size:49px ;
 background-color: orangered;
