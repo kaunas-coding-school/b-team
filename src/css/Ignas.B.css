@@ -16,7 +16,7 @@ p {
     size: 15px;
 }
 
-.image2 img{
+.picture img{
 
     width: 500px;
     height: 200px;
@@ -24,7 +24,7 @@ p {
     padding: 10px;
     float: right;
 }
-.image img{
+.image2 img{
     width: 500px;
     height: 200px;
     margin: 10px;
@@ -37,7 +37,8 @@ a {
     float: bottom;
 }
 iframe{
-    float: right;
+    width: 560px;
+    height: 315px;
 }
 
 /*
