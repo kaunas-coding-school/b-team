@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="src/css/main.css">
@@ -7,15 +7,16 @@
 
 </head>
 
-<h1 style="text-align: center"> Sveiki atvykę!!! </h1>
 
 <body>
 
 <ul>
     <li><a href="Arturas.html">Arturas</a></li>
     <li><a href="Ignas.html">Ignas</a></li>
-    <li><a href="VaidasS.html"> Vaidas!</a></li>
+    <li><a href="VaidasS.html"> Vaida!</a></li>
 </ul>
+
+<h1 style="text-align: center"> Sveiki atvykę!!! </h1>
 
 <p>Norite parduoti seną, antikvarinį ar susidėvėjusį automobilį? Mūsų įmonėje dirbantys specialistai pakonsultuos, sutvarkys visus reikalingus dokumentus, pasiūlys geriausią kainą tiems, kurie nori parduoti senus automobilius.</p>
 
@@ -31,6 +32,47 @@
 <p title="pasisveikinimas">
     Gerų švenčių jums linki portalo administracija ir šis nuostabus tinginys apačioje-- !!
 </p>
+
+<div class="Pirmas">
+
+    <form>
+
+        <p>Pasirinkite:</p>
+
+        <input type="radio" name="gender" value="male" checked> Vyras<br>
+        <input type="radio" name="gender" value="female"> Moteris<br>
+        <input type="radio" name="gender" value="other"> Kita
+
+    </form>
+</div>
+
+<div class="antras">
+
+<form action="action_page.php">
+
+    <p>Iveskite duomenis</p>
+
+    Vardas:<br>
+    <input type="text" name="firstname" value="">
+    <br>
+    Pavarde:<br>
+    <input type="text" name="lastname" value="">
+    <br><br>
+    <input type="submit" value="Submit">
+
+</form>
+
+</div>
+
+<div class="wraper">
+     <div class="left_side">
+
+         <div class="right_side">
+
+         </div>
+     </div>
+</div>
+
 
 
 </body>

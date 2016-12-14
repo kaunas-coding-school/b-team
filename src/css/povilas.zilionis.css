@@ -17,8 +17,23 @@ h1{
 p {
     color: white;
     text-align: left;
-    font-family: Consolas;
+    font-family: Caviar Dreams;
 }
+
+.Pirmas {
+    float: left;
+
+
+}
+.antras {
+    float: left;
+
+}
+
+
+
+
+/*
 ul{
 
     list-style: circle;
@@ -39,4 +54,4 @@ li a {
 }
 .wraper {
     margin: 20px;
-}
+}*/

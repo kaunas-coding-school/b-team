@@ -2,9 +2,6 @@ body {
 
     background-color: aliceblue;
 
-
-
-
 }
 
 h1 {
@@ -19,7 +16,7 @@ p {
     size: 15px;
 }
 
-img {
+.picture img{
 
     width: 500px;
     height: 200px;
@@ -27,9 +24,21 @@ img {
     padding: 10px;
     float: right;
 }
+.image2 img{
+    width: 500px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    float: bottom;
+}
+
 
 a {
     float: bottom;
+}
+iframe{
+    width: 560px;
+    height: 315px;
 }
 
 /*
