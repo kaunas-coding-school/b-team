@@ -1,72 +1,91 @@
 h2 {
     padding: 30px;
     margin: 60px;
-    font-family: "Arial Black";
+    font-family: "Cambria Math";
     color: darkturquoise;
 
 }
 
-.picture img{
+.picture img {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
 .soccer {
     width: 100%;
     height: 100%;
-
+float: none;
     background-image: url("https://blog-blogmediainc.netdna-ssl.com/upload/SportsBlogcom/1473720/0778540001479694311_filepicker.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .soccer a {
-margin: 19px 50px;
-font-family: "Bodoni MT Black";
+    margin: 19px 50px;
+    font-family: "Bodoni MT Black";
     color: aquamarine;
     text-align: left;
     text-decoration: dotted;
 
 }
-.soccer p{
-    color: #403aff;
-    font-family: "Bookman Old Style";
-    text-align: center;
 
+.soccer p {
+    color: #403aff;
+    font-family: "Goudy Old Style";
+    text-align: justify;
+    text-decoration: solid;
 }
 
-.links a{
+.links{
+
+
     font-family: "Bodoni MT";
     text-decoration: none;
-font-size: 39px;
+    font-size: 49px;
     text-align: center;
-color: #99FF00;
+    color: #a0eeff;
 }
-p{
-margin: 30px;
+
+
+.links a {
+
+
+
+    text-decoration: none;
+    font-size: 39px;
+    color: #99FF00;
+}
+
+p {
+    margin: 0px;
     padding: 30px;
-   text-align: inherit;
+    text-align: inherit;
     text-decoration: underline;
     text-decoration-color: #403aff;
-
+    background-color: lavender;
 
 }
-.Basketball a{
-    font-size:49px ;
-background-color: orangered;
-    color: brown;
-    text-align: right;
 
+.Basketball a {
+    font-size: 49px;
+    color: brown;
+    text-decoration: none;
 }
 
 .Basketball {
-
+    text-align: center;
     width: 100%;
     height: 100%;
 
     background-image: url("http://boykinsbasketball.com/wp-content/uploads/2015/10/5451a9bac173c.preview-699.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.Basketball select {
+    font-size: 30px;
+    text-align: left;
+
+
 }
