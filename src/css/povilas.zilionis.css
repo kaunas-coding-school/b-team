@@ -17,8 +17,22 @@ h1{
 p {
     color: white;
     text-align: left;
-    font-family: "Caviar Dreams";
+    font-family: Caviar Dreams;
 }
+
+.Pirmas {
+    float: left;
+
+
+}
+.antras {
+    float: left;
+
+}
+
+
+
+
 /*
 ul{
 
