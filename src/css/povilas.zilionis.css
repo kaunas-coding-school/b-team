@@ -1,3 +1,6 @@
+* {
+    font-family: "Caviar Dreams";
+}
 body {
     div: background-color #9F0;
     background-image: url('http://i1.wallpaperscraft.com/image/cupcakes_chocolate_cream_dessert_cocoa_beans_80890_1920x1080.jpg');
@@ -28,6 +31,18 @@ p {
 .antras {
     float: left;
 
+}
+head ul {
+    list-style: none;
+    background-color: saddlebrown;
+    width: 100%;
+    opacity: 0.5;
+    padding: 0;
+    margin: 0;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    box-shadow: #f4a460;
 }
 
 
