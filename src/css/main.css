@@ -6,6 +6,7 @@ body{
     float: none;
 }
 ul {
+
     list-style: none;
     background-color: beige;
     width: 100%;
@@ -16,7 +17,9 @@ ul {
     top: 0;
     box-shadow: cadetblue;
 
+
 }
+
 
 li a{
     float: left;

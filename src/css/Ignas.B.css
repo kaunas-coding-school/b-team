@@ -10,7 +10,12 @@ h1 {
 
 }
 
+p{
+    text-align: left;
+}
+
 p {
+
     color: darkslateblue;
     text-align: center;
     size: 15px;
@@ -39,7 +44,21 @@ a {
 iframe{
     width: 560px;
     height: 315px;
+    margin: 10px;
+    padding: 20px;
 }
+
+.Connect{
+    float:right;
+}
+
+
+
+
+.linkas{
+    float: right;
+}
+
 
 /*
 ul {
