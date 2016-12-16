@@ -1,6 +1,6 @@
 body {
     background-color: powderblue;
-    background-image: url("http://photos4.meetupstatic.com/photos/theme_body/d/4/1/3/full_7134291.jpeg");
+    background-image: url("http://www.dancezonebournemouth.com/img/backgrounds/portfolio_single.jpg");
     padding: 0;
     margin: 0;
 }
@@ -16,18 +16,26 @@ img {
 }
 
 p {
+    margin: 10px 0px 10px;
     text-align: center;
     color: red;
 }
 
 p1 {
-    text-align: left;
     color: green;
+    text-align: center;
+    margin: 20px;
+}
+
+.row {
+    color: #99FF00;
+    margin-left: 20px ;
+    margin-right: 20px;
 }
 
 ul {
     list-style: none;
-    background-color: #003345;
+    background-color: #403aff;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -54,8 +62,10 @@ li a {
     color: white;
 }
 
-wraper. {
+.wraper {
     margin: 20px;
+    margin-top:110px ;
+    margin-bottom:14px ;
 }
 .img {
     text-align: center;
@@ -95,4 +105,20 @@ p2 {
 
 .Lytis1 {
     text-align: center;
+}
+
+.panel-collapse {
+    color: #403aff;
+}
+
+.panel-group {
+    color: #a0eeff;
+}
+
+#headingOne {
+    color: brown;
+}
+
+.panel-default {
+    border-color: antiquewhite;
 }
