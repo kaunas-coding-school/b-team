@@ -3,10 +3,10 @@ h2 {
     margin: 60px;
     font-family: "Cambria Math";
     color: darkturquoise;
-
 }
 
 .picture img {
+    ;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,5 +94,12 @@ p {
 
     margin: 0px;
     padding: 10px;
+
+}
+
+.rows
+{
+    font-family: "Malgun Gothic Semilight";
+    color: coral;
 
 }

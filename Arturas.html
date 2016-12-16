@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/ArturasR.css">
+
+
+
+
+
+
+    <script src="src/js/angular.min (1).js" type="application/javascript"></script>
     <title>Pagrindinis</title>
 </head>
 <body>
@@ -21,18 +28,15 @@
 <br>
 <br>
 
-<h2>Naujas WEB</h2>
+<h1>Naujas WEB</h1>
 <br>
 <div class="picture">
-<img src="http://m3.i.pbase.com/g3/89/198089/2/121260213.QGt1PFQY.jpg" alt="Paveiksliukas" >
+ <img  src="http://m3.i.pbase.com/g3/89/198089/2/121260213.QGt1PFQY.jpg" id="foto" alt="Paveiksliukas" >
 </div>
 
 
 <div class="row">
 <div class="col-md-8">
-
-
-
 <p title="I am smart">
     "On the other hand,  &nbsp; &nbsp; we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire,
     that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will,
@@ -43,9 +47,6 @@
 </p>
 
 </div>
-<hr>
-
-
     <div class="col-md-4">
 <div class="links">
 <a title="Pamatysi ko nemates" href="Soccer.html">Futbolo naujienos</a>
@@ -68,7 +69,59 @@
 </div>
 </div>
 </div>
-<!-- Latest compiled and minified JavaScript -->
+<div class="rows" id="rows">
+    <div class="col-md-3 col-xs-4">
+        Daug kas galvoja, kad Lorem Ipsum - tai vien tik atsitiktinai surinktas tekstas, bet taip nėra.
+        Jo šaknis galima rasti klasikiniame Lotynų kalba parašytame kūrinyje, išleistame 45 pr. m. e.,
+        t.y. prieš du tūkstančius metų. Richard McClintock, lotynų kalbos profesorius Hampden-Sydney (JAV) koledže,
+        išrinko vieną iš neaiškesnių žodžių iš Lorem Ipsum ištraukos - „consectetur“, ir ėmėsi ieškoti jo klasikinėje lotynų kalbos literatūroje.
+        Tokiu būdu jis rado neabejotiną šio žodžio ir Lorem Ipsum šaltinį knygos „de Finibus Bonorum et Malorum“ (Apie gėrio ir blogio ribas) 1.10.32 ir 1.10.33 pastraipose. Kūrinio autorius – Ciceronas, parašęs jį 45 pr. m. e. Šis etikos teorijos traktatas buvo labai populiarus Renesanso laikais.
+        Pirmoji Lorem Ipsum teksto eilutė, „Lorem ipsum dolor sit amet..“ sukurta remiantis 1.10.32 pastraipa.
+    </div>
+    <div class="col-md-3 col-xs-4">
+        Yra daug įvarių Lorem Ipsum variantų, bet daugelis jų buvo vienokiu ar kitokiu būdu modifikuoti, pvz.
+        jumoristiniai intarpai arba žodžiai, nė kiek nepanasūs i lotynų kalbą. Jeigu Jums reikia Lorem Ipsum teksto rimtam projektui,
+        Jūs tikriausiai nenorėtumėte viduryje eilutės kokio nors trikdančio išsireiškimo.
+        Visi kiti Lorem Ipsum teksto eilučių generatoriai dažniausiai tik kartoja tą patį tekstą, kol užpildo reikiamus tarpus
+    </div>
+    <div class="col-md-3 col-xs-4">
+      <b>  Todėl čia siūlomas teksto eilučių generatorius yra vienintelis tikras Lorem Ipsum teksto generatorius.
+        Jame naudojamas žodynas iš daugiau nei 200 lotynų kalbos žodžių, o taip pat keletas ištisų sakinių modelių.
+          Taip surinktas Lorem Ipsum teksto variantas atrodo tikroviškai, nesikartoja, ir jame nėra „neįmanomų“ žodžių.</b>
+    </div>
+<div class="col-md-3 col-xs-4">
+   <i> Jau seniai žinoma, kad vertinant dizainą ir kompoziciją, blaško skaitomas tekstas. Tad Lorem Ipsum naudojamas tam,
+    kad daugiau ar mažiau normalizuotų raidžių paskirstymą vietoje paprasto dubliavimo: „Tekstas tekstas tekstas tekstas...“.
+    Daugelis leidybinių sistemų programų,
+       o taip pat ir Hiperteksto kalbos redaktoriai naudoja Lorem Ipsum kaip demonstracinę numatyto teksto versiją, todel žodžių „Lorem</i>
+</div>
+
+
+</div>
+
+
+<script
+        src="http://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+    $('#foto').click(function () {
+        alert('Paspaudziau... !!!');
+
+    });
+
+</script>
+
+<script>
+    $('#rows').click(function () {
+        alert('Musu stulpeliai');
+
+    });
+
+</script>
+
 </body>
+
 </html>
