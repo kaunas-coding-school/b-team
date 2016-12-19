@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="App" xmlns="http://www.w3.org/1999/html">
 <head>
 
     <link rel="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -14,219 +14,275 @@
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <script src="src/js/angular.min (1).js"></script>
+    <script src="src/js/Vaidas.js"></script>
 
 
 </head>
 <body>
 
-<ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Zouk</a></li>
-    <li><a href="#">Kizomba</a></li>
-    <li><a href="#">Bachata</a></li>
-    <li><a href="#">Salsa</a></li>
-</ul>
+<div class="vs" ng-controller="VaidasSurblys as vs">
 
-<div class="wraper">
+    <ul class="meniu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Zouk</a></li>
+        <li><a href="#">Kizomba</a></li>
+        <li><a href="#">Bachata</a></li>
+        <li><a href="#">Salsa</a></li>
+    </ul>
 
-    <h1>LOTYNŲ AMERIKOS ŠOKIAI</h1>
+    <div class="wraper">
 
-    <p>Išreikšk savo meilę šokdamas...</p>
+        <h1>LOTYNŲ AMERIKOS ŠOKIAI {{vs.kintamasis}}</h1>
+
+        <p>Išreikšk savo meilę šokdamas...</p>
 
 
-    <form action="action_page.php">
 
-        <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="true">
-                Dropdown
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+
+        <form action="action_page.php">
+
+
+
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+
+            <p class="col-xs-12 col-sm-12 col-md-6">
+            <ul>
+                <li ng-repeat="daiktas in vs.masyvas">{{daiktas}}</li>
             </ul>
-        </div>
+            dgdgdg
+            dgdgdgdg
+            dgdgdg
+            </p>
 
-        <div class="Vardas_pavarde">
 
-            <p2>Iveskite savo varda ir pavarde.</p2>
-            <br>
 
-            <!--First name:<br>-->
-            <input type="text" name="Vardas" placeholder="Vardas" id="Vardas" value="">
-            <br>
-            <!--Last name:<br>-->
-            <input type="text" name="Pavarde" placeholder="Pavarde" value="">
+            <div class="Vardas_pavarde">
 
-        </div>
-
-        <div class="Lytis">
-            <div class="Lytis1">
-
-                <p3>Jusu lytis.</p3>
+                <p2>Iveskite savo varda ir pavarde.</p2>
                 <br>
 
-                <input type="radio" name="gender" value="Vyras" checked> Male<br>
-                <input type="radio" name="gender" value="Moteris"> Female<br>
-                <input type="radio" name="gender" value="Kita"> Other
+                First {{vs.Vardas}}:<br>
+                <input type="text" ng-model="vs.Vardas" placeholder="Vardas" id="Vardas" value="">
+                <br>
+                Last {{vs.Pavarde}}:<br>
+                <input type="text" ng-bind="vs.Pavarde" placeholder="Pavarde" value="">
 
-                <br><br>
-                <input type="submit" value="Submit">
+                <span ng-bind="vs.Vardas">BLABLA;'HAHAHA</span>
+
             </div>
-        </div>
-    </form>
 
+            <div class="Lytis">
+                <div class="Lytis1">
 
-    <div class="img"><img src="https://www.porto-latino.com/wp-content/uploads/2015/09/dance-party-940x600.jpg"
-                          alt="https://www.porto-latino.com/wp-content/uploads/2015/09/dance-party-940x600.jpg"
-                          width="1200" height="900"></div>
+                    <p3>Jusu lytis.</p3>
+                    <br>
 
+                    <input type="radio" name="gender" value="Vyras" checked> Male<br>
+                    <input type="radio" name="gender" value="Moteris"> Female<br>
+                    <input type="radio" name="gender" value="Kita"> Other
 
-    <div class="row">
-        <div class="col-xs-6 col-md-4-offset-4">.What is Lorem Ipsum?
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make
-            a type specimen book. It has survived not only five centuries, but also the leap into electronic
-            typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-            containing
-            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-            versions
-            of Lorem Ipsum.
-        </div>
-        <div class="col-xs-6 col-sm-3-offset-2">. WWhat is Lorem Ipsum?
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make
-            a type specimen book. It has survived not only five centuries, but also the leap into electronic
-            typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-            containing
-            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-            versions
-            of Lorem Ipsum..
-        </div>
-        <p1>What is Lorem Ipsum?
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make
-            a type specimen book. It has survived not only five centuries, but also the leap into electronic
-            typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-            containing
-            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-            versions
-            of Lorem Ipsum.
-
-            Why do we use it?
-            It is a long established fact that a reader will be distracted by the readable content of a page when
-            looking at
-            its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-            opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
-            packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem
-            ipsum'
-            will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes
-            by
-            accident, sometimes on purpose (injected humour and the like).
-        </p1>
-
-    </div>
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                       aria-expanded="true" aria-controls="collapseOne">
-                        Collapsible Group Item #1
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                    labore sustainable VHS.
+                    <br><br>
+                    <input type="submit" value="Submit">
                 </div>
             </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                       href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Collapsible Group Item #2
-                    </a>
-                </h4>
+        </form>
+
+
+        <div class="img"><img src="https://www.porto-latino.com/wp-content/uploads/2015/09/dance-party-940x600.jpg"
+                              alt="https://www.porto-latino.com/wp-content/uploads/2015/09/dance-party-940x600.jpg"
+                              width="1200" height="900"></div>
+
+
+        <div class="row">
+            <div class="col-xs-6 col-md-4-offset-4">.What is Lorem Ipsum?
+
+
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to
+                make
+                a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing
+                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+                versions
+                of Lorem Ipsum.
             </div>
-            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                    labore sustainable VHS.
+            <div class="col-xs-6 col-sm-3-offset-2">. WWhat is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to
+                make
+                a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing
+                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+                versions
+                of Lorem Ipsum..
+            </div>
+            <p1>What is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to
+                make
+                a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing
+                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+                versions
+                of Lorem Ipsum.
+
+                Why do we use it?
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at
+                its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                as
+                opposed to using 'Content here, content here', making it look like readable English. Many desktop
+                publishing
+                packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem
+                ipsum'
+                will uncover many web sites still in their infancy. Various versions have evolved over the years,
+                sometimes
+                by
+                accident, sometimes on purpose (injected humour and the like).
+            </p1>
+
+        </div>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                           aria-expanded="true" aria-controls="collapseOne">
+                            Collapsible Group Item #1
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum
+                        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                        nulla
+                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                        nesciunt
+                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                       href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Collapsible Group Item #3
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                    labore sustainable VHS.
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Collapsible Group Item #2
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum
+                        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                        nulla
+                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                        nesciunt
+                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+                    </div>
                 </div>
             </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Collapsible Group Item #3
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum
+                        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                        nulla
+                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                        nesciunt
+                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+                    </div>
+                </div>
+
+                <p class="col-xs-12 col-sm-12 col-md-6" ng-hide="vs.par1">
+                    <button id="slepti" ng-click="vs.par1=false">Hide</button>
+                    blaaa
+                    blaaaa j
+                    haaa
+                </p>
+
+
+            </div>
+
+
         </div>
+
+
+
+        <!--<div class="wraper">
+            <div class="left_side"
+        <div class="left_side">
+        </div>
+            <div class="right_side">
+        </div>-->
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script
+                src="http://code.jquery.com/jquery-3.1.1.min.js"
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+
+        <script>
+            $('.img').click(function () {
+                $('#Vardas').val('Vaidas');
+            });
+            $('.collapse').collapse()
+
+        </script>
     </div>
+</div>
 
-    <!--<div class="wraper">
-        <div class="left_side"
-    <div class="left_side">
-    </div>
-        <div class="right_side">
-    </div>-->
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script
-            src="http://code.jquery.com/jquery-3.1.1.min.js"
-            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-            crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-
-    <script>
-        $('.img').click(function () {
-            $('#Vardas').val('Vaidas');
-        });
-        $('.collapse').collapse()
-
-    </script>
 </body>
 </html>
