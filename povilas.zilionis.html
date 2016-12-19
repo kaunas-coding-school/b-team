@@ -1,26 +1,53 @@
 <!DOCTYPE html>
-<html lang="en-US" xmlns="http://www.w3.org/1999/html">
+<html ng-app>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/povilas.zilionis.css">
+    <script src="src/js/angular.min (1).js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <ul>
+        <li><a href="Arturas.html">Apsilankyk Artūro Website!</a></li>
+        <li><a href="Ignas.html">Taip pat užmesk akį į Igno puslapį!</a></li>
+        <li><a href="VaidasS.html"> Arba užeik į mūsų senjoro Vaido WEB!</a></li>
+    </ul>
+
 
 </head>
 
 
 <body>
 
-<ul>
-    <li><a href="Arturas.html">Arturas</a></li>
-    <li><a href="Ignas.html">Ignas</a></li>
-    <li><a href="VaidasS.html"> Vaida!</a></li>
-</ul>
 
 <h1 style="text-align: center"> Sveiki atvykę!!! </h1>
 
-<p>Norite parduoti seną, antikvarinį ar susidėvėjusį automobilį? Mūsų įmonėje dirbantys specialistai pakonsultuos, sutvarkys visus reikalingus dokumentus, pasiūlys geriausią kainą tiems, kurie nori parduoti senus automobilius.</p>
+<div class="row">
 
-<p> Norint parduoti automobilį, pirmiausiai susiduriama su problema, kaip rasti tinkamiausią transporto priemonės supirkėją. Tačiau nereikia skubėti ir kreiptis į pirmą sutiktą supirkėją. Svarbiausias dalykas, kurį reikia išsiaiškinti – tai pagrindinės supirkimo sąlygos.</p>
+<div class="btn-group">
+
+
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Action <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+    </ul>
+</div>
+
+<p1>Norite parduoti seną, antikvarinį ar susidėvėjusį automobilį? Mūsų įmonėje dirbantys specialistai pakonsultuos, sutvarkys visus reikalingus dokumentus, pasiūlys geriausią kainą tiems, kurie nori parduoti senus automobilius.</p1>
+
+<p2> Norint parduoti automobilį, pirmiausiai susiduriama su problema, kaip rasti tinkamiausią transporto priemonės supirkėją. Tačiau nereikia skubėti ir kreiptis į pirmą sutiktą supirkėją. Svarbiausias dalykas, kurį reikia išsiaiškinti – tai pagrindinės supirkimo sąlygos.</p2>
 
 <p>Automobilio pardavėjui ypač aktualu kaina – užmokestis, kurį gaus už parduodamą automobilį. Jeigu Jus sudomino kelios automobilių supirkėjų įmonės, kurios siūlo praktiškai vienodą užmokestį, verta pasidomėti kokiomis sąlygomis dirba įmonė.</p>
 
@@ -48,18 +75,18 @@
 
 <div class="antras">
 
-<form action="action_page.php">
+<br action="action_page.php">
 
     <p>Iveskite duomenis</p>
 
-    Vardas:<br>
-    <input type="text" name="firstname" value="">
+    Vardas: {{Vardas}}<br>
+    <input type="text" name="firstname" value="vardas">
     <br>
-    Pavarde:<br>
+    Pavarde: {{pavarde}}<br>
+    <input ng-model="pavarde" type="text" name="pavarde" value="">
     <input type="text" name="lastname" value="">
-    <br><br>
+    </br>
     <input type="submit" value="Submit">
-
 </form>
 
 </div>
@@ -73,7 +100,17 @@
      </div>
 </div>
 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script>
+        $('').click(function () {
+            alert('PASPAUDZIAU..."""');
 
-
+        });
+    </script>
+</div>
 </body>
 </html>
