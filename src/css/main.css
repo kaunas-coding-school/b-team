@@ -5,10 +5,10 @@ body{
     margin: 0;
     float: none;
 }
-ul {
+.meniu {
 
     list-style: none;
-    background-color: beige;
+    background-color: #99FF00;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -21,7 +21,7 @@ ul {
 }
 
 
-li a{
+.meniu li{
     float: left;
     margin: 25px;
     text-decoration: none;

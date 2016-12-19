@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app>
 <head>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/Ignas.B.css">
     <meta charset="UTF-8">
+
     <title>Title</title>
+    <script src="src/js/angular.min (1).js" type="application/javascript"></script>
+    <script src="src/js/Arturas.js"></script>
 </head>
 <body>
 
@@ -21,10 +24,11 @@
 
     <div class="Connect">
     <form action="Vartotojo_profilis.html">
-
-        <input type="text" name="firstname" placeholder="Vardas" >
+Vardas:{{vardas}} <br>
+        <input ng-model="vardas" type="text" name="firstname" id="vardas" placeholder="Vardas" >
         <br>
-        <input type="text" name="lastname" placeholder="Pavarde">
+        Pavarde:{{pavarde}}
+        <input ng-model="pavarde" type="text" name="lastname" id="pavarde" placeholder="Pavarde">
         <br>
         <input type="submit" value="Patvirtinti">
     </form>
