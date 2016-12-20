@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="App">
 <head>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -9,132 +9,198 @@
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/Ignas.B.css">
     <meta charset="UTF-8">
-
-    <title>Title</title>
     <script src="src/js/angular.min (1).js" type="application/javascript"></script>
-    <script src="src/js/Arturas.js"></script>
+    <script src="src/js/controllers/Ignas.controller.js"></script>
+    <title>Title</title>
 </head>
 <body>
 
+<div class="ib" ng-controller="IgnasBaltokas as ib">
+<div ng-view></div>
 
-<ul>
-    <li><a href="index.html">Arturas</a></li>
-    <li><a href="povilas.zilionis.html">Povilas</a></li>
-    <li><a href="VaidasS.html">Vaidas</a></li>
+    <ul>
+        <li><a href="Arturas.html">Arturas</a></li>
+        <li><a href="povilas.zilionis.html">Povilas</a></li>
+        <li><a href="VaidasS.html">Vaidas</a></li>
 
-    <div class="Connect">
-    <form action="Vartotojo_profilis.html">
-Vardas:{{vardas}} <br>
-        <input ng-model="vardas" type="text" name="firstname" id="vardas" placeholder="Vardas" >
-        <br>
-        Pavarde:{{pavarde}}
-        <input ng-model="pavarde" type="text" name="lastname" id="pavarde" placeholder="Pavarde">
-        <br>
-        <input type="submit" value="Patvirtinti">
-    </form>
+        <div class="Connect">
+            <form action="Vartotojo_profilis.html">
+
+                Vardas: {{ib.vardas}}
+                <input ng-model="ib.vardas" type="text" name="firstname" id="vardas" placeholder="Vardas">
+                <br>
+                Pavarde: {{ib.pavarde}}
+                <input ng-bind="ib.pavarde" type="text" name="lastname" id="pavarde" placeholder="Pavarde">
+                <br>
+                <input type="submit" value="Patvirtinti">
+                <input type="reset" value="Istrinti">
+            </form>
+        </div>
+
+    </ul>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1> Mokykites programavimo {{ib.kintamasis}}</h1>
+    <span ng-bind="ib.vardas">jfdisjfskngkjdfng</span>
+
+    <p> HTML, CSS</p>
+    <p> With HTML you can create your own Web site.<br>
+        This tutorial teaches you everything about HTML.<br>
+        HTML is easy to learn - You will enjoy it.</p>
+    <div class="picture">
+
+        <img src="https://tuanthong138.files.wordpress.com/2016/10/html_css.jpg" alt="google.com" id="foto">
+
     </div>
-</ul>
+    <br>
 
-<br>
-<br>
-<br>
-<br>
-<h1> Mokykites programavimo</h1>
+    <iframe src="https://www.youtube.com/embed/bWPMSSsVdPk" frameborder="0" allowfullscreen></iframe>
+    <br>
 
-<p> HTML, CSS</p>
-<p> With HTML you can create your own Web site.<br>
-    This tutorial teaches you everything about HTML.<br>
-    HTML is easy to learn - You will enjoy it.</p>
-<div class="picture">
+    <div class="row">
+        <div class="col-md-6" ng-show="ib.par1">
+            <button id="slepti" ng-click="ib.par1=false">Slepti teksta</button>
+            <div class="masyvas">
+            <ul>
+                <li ng-reapet="item in ib.masyvas">{{item}}</li>
+            </ul>
+        </div>
 
-    <img src="https://tuanthong138.files.wordpress.com/2016/10/html_css.jpg" alt="google.com" id="foto">
+            <p>He do subjects prepared bachelor juvenile ye oh. He feelings removing informed he as ignorant we
+                prepared.
+                Evening do
+                forming observe spirits is in. Country hearted be of justice sending. On so they as with room cold ye.
+                Be
+                call four
+                my went mean. Celebrated if remarkably especially an. Going eat set she books found met aware.
+                ull age sex set feel her told. Tastes giving in passed direct me valley as supply. End great stood boy
+                noisy
+                often
+                way taken short. Rent the size our more door. Years no place abode in ﻿no child my. Man pianoforte too
+                solicitude
+                friendship devonshire ten ask. Course sooner its silent but formal she led. Extensive he assurance
+                extremity
+                at
+                breakfast. Dear sure ye sold fine sell on. Projection at up connection literature insensible motionless
+                projecting.
+                Cause dried no solid no an small so still widen. Ten weather evident smiling bed against she examine
+                its.
+                Rendered
+                far opinions two yet moderate sex striking. Sufficient motionless compliment by stimulated assistance
+                at.
+                Convinced
+                resolving extensive agreeable in it on as remainder. Cordially say affection met who propriety him. Are
+                man
+                she
+                towards private weather pleased. In more part he lose need so want rank no. At bringing or he sensible
+                pleasure.
+                Prevent he parlors do waiting be females an message society.
+                So if on advanced addition absolute received replying throwing he. Delighted consisted newspaper of
+                unfeeling as
+                neglected so. Tell size come hard mrs and four fond are. Of in commanded earnestly resources it. At
+                quitting
+                in
+                strictly up wandered of relation answered felicity. Side need at in what dear ever upon if. Same down
+                want
+                joy neat
+                ask pain help she. Alone three stuff use law walls fat asked. Near do that he help.
+                Carried nothing on am warrant towards. Polite in of in oh needed itself silent course. Assistance
+                travelling
+                so
+                especially do prosperous appearance mr no celebrated. Wanted easily in my called formed suffer. Songs
+                hoped
+                sense as
+                taken ye mirth at. Believe fat how six drawing pursuit minutes far. Same do seen head am part it dear
+                open
+                to.
+                Whatever may scarcely judgment had.
+                He moonlight difficult engrossed an it sportsmen. Interested has all devonshire difficulty gay
+                assistance
+                joy.
+                Unaffected at ye of compliment alteration to. Place voice no arise along to. Parlors waiting so against
+                me
+                no.
+                Wishing calling are warrant settled was luckily. Express besides it present if at an opinion visitor.
+                Forfeited you engrossed but gay sometimes explained. Another as studied it to evident. Merry sense given
+                he
+                be
+                arise.
+                Conduct at an replied removal an amongst. Remaining determine few her two cordially admitting old.
+                Sometimes
+                strangers his ourselves her depending you boy. Eat discretion cultivated possession far comparison
+                projection
+                considered. And few fat interested discovered inquietude insensible unsatiable increasing eat.
+            <p>
+        </div>
 
-</div>
-<br>
 
-<iframe src="https://www.youtube.com/embed/bWPMSSsVdPk" frameborder="0" allowfullscreen></iframe>
-<br>
-
-<div class="row">
-    <div class="col-md-6">
-<p>He do subjects prepared bachelor juvenile ye oh. He feelings removing informed he as ignorant we prepared. Evening do
-    forming observe spirits is in. Country hearted be of justice sending. On so they as with room cold ye. Be call four
-    my went mean. Celebrated if remarkably especially an. Going eat set she books found met aware.
-    ull age sex set feel her told. Tastes giving in passed direct me valley as supply. End great stood boy noisy often
-    way taken short. Rent the size our more door. Years no place abode in ﻿no child my. Man pianoforte too solicitude
-    friendship devonshire ten ask. Course sooner its silent but formal she led. Extensive he assurance extremity at
-    breakfast. Dear sure ye sold fine sell on. Projection at up connection literature insensible motionless
-    projecting.
-    Cause dried no solid no an small so still widen. Ten weather evident smiling bed against she examine its. Rendered
-    far opinions two yet moderate sex striking. Sufficient motionless compliment by stimulated assistance at. Convinced
-    resolving extensive agreeable in it on as remainder. Cordially say affection met who propriety him. Are man she
-    towards private weather pleased. In more part he lose need so want rank no. At bringing or he sensible pleasure.
-    Prevent he parlors do waiting be females an message society.
-    So if on advanced addition absolute received replying throwing he. Delighted consisted newspaper of unfeeling as
-    neglected so. Tell size come hard mrs and four fond are. Of in commanded earnestly resources it. At quitting in
-    strictly up wandered of relation answered felicity. Side need at in what dear ever upon if. Same down want joy neat
-    ask pain help she. Alone three stuff use law walls fat asked. Near do that he help.
-    Carried nothing on am warrant towards. Polite in of in oh needed itself silent course. Assistance travelling so
-    especially do prosperous appearance mr no celebrated. Wanted easily in my called formed suffer. Songs hoped sense as
-    taken ye mirth at. Believe fat how six drawing pursuit minutes far. Same do seen head am part it dear open to.
-    Whatever may scarcely judgment had.
-    He moonlight difficult engrossed an it sportsmen. Interested has all devonshire difficulty gay assistance joy.
-    Unaffected at ye of compliment alteration to. Place voice no arise along to. Parlors waiting so against me no.
-    Wishing calling are warrant settled was luckily. Express besides it present if at an opinion visitor.
-    Forfeited you engrossed but gay sometimes explained. Another as studied it to evident. Merry sense given he be
-    arise.
-    Conduct at an replied removal an amongst. Remaining determine few her two cordially admitting old. Sometimes
-    strangers his ourselves her depending you boy. Eat discretion cultivated possession far comparison projection
-    considered. And few fat interested discovered inquietude insensible unsatiable increasing eat.<p>
-</div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Of on affixed civilly moments promise explain fertile in. Assurance advantage belonging happiness
+                    departure so of.
+                    Now improving and one sincerity intention allowance commanded not. Oh an am frankness be necessary
+                    earnestly
+                    advantage estimable extensive. Five he wife gone ye. Mrs suffering sportsmen earnestly any. In am do
+                    giving to
+                    afford parish settle easily garret.Man request adapted spirits set pressed. Up to denoting subjects
+                    sensible
+                    feelings it indulged directly. We dwelling
+                    elegance do shutters appetite yourself diverted. Our next drew much you with rank. Tore many held
+                    age
+                    hold rose than
+                    our. She literature sentiments any contrasted. Set aware joy sense young now tears china shy.
 
 
+                    Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected.
+                    He
+                    at no nothing
+                    forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who
+                    week.
+                    Surrounded
+                    prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
 
 
-<div class="row">
-    <div class="col-md-6">
-<p>Of on affixed civilly moments promise explain fertile in. Assurance advantage belonging happiness departure so of.
-    Now improving and one sincerity intention allowance commanded not. Oh an am frankness be necessary earnestly
-    advantage estimable extensive. Five he wife gone ye. Mrs suffering sportsmen earnestly any. In am do giving to
-    afford parish settle easily garret.Man request adapted spirits set pressed. Up to denoting subjects sensible
-    feelings it indulged directly. We dwelling
-    elegance do shutters appetite yourself diverted. Our next drew much you with rank. Tore many held age hold rose than
-    our. She literature sentiments any contrasted. Set aware joy sense young now tears china shy.
+                    Advantage old had otherwise sincerity dependent additions. It in adapted natural hastily is justice.
+                    Six
+                    draw you
+                    him
+                    full not mean evil. Prepare garrets it expense windows shewing do an. She projection advantages
+                    resolution son
+                    indulgence. Part sure on no long life am at ever. In songs above he as drawn to. Gay was outlived
+                    peculiar rendered
+                    led six.
 
 
-    Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing
-    forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded
-    prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
+                    Am if number no up period regard sudden better. Decisively surrounded all admiration and not you.
+                    Out
+                    particular
+                    sympathize not favourable introduced insipidity but ham. Rather number can and set praise. Distrusts
+                    an
+                    it contented
+                    perceived attending oh. Thoroughly estimating introduced stimulated why but motionless.</p>
+            </div>
+        </div>
+        <div class="linkas">
+            <a href="http://www.w3schools.com/html/html_basic.asp">This is a link</a>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+        <script
+                src="http://code.jquery.com/jquery-3.1.1.min.js"
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+        <script>
+            $('#foto').click(function () {
+                alert('Jeigu ka, tai cia yra Sigio daryta fotkyte.')
 
-
-    Advantage old had otherwise sincerity dependent additions. It in adapted natural hastily is justice. Six draw you
-    him
-    full not mean evil. Prepare garrets it expense windows shewing do an. She projection advantages resolution son
-    indulgence. Part sure on no long life am at ever. In songs above he as drawn to. Gay was outlived peculiar rendered
-    led six.
-
-
-    Am if number no up period regard sudden better. Decisively surrounded all admiration and not you. Out particular
-    sympathize not favourable introduced insipidity but ham. Rather number can and set praise. Distrusts an it contented
-    perceived attending oh. Thoroughly estimating introduced stimulated why but motionless.</p>
+            });
+        </script>
     </div>
-</div>
-<div class="linkas">
-<a href="http://www.w3schools.com/html/html_basic.asp">This is a link</a>
-</div>
-    <script
-            src="http://code.jquery.com/jquery-3.1.1.min.js"
-            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-            crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-<script>
-    $('#foto').click(function () {
-        alert('Jeigu ka, tai cia yra Sigio daryta fotkyte.')
-
-    });
-    </script>
 </div>
 </body>
 </html>
