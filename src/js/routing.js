@@ -2,10 +2,10 @@
  * Created by Lenovo T550 on 20/12/2016.
  */
 
-App.config(function($routeProvider) {
+app.config(function($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl : "Arturas.html"
+            templateUrl : "ArtRaguckas.html"
         })
         .when("/red", {
             templateUrl : "Ignas.htm"
