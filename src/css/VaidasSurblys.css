@@ -32,8 +32,7 @@ p1 {
     margin-left: 20px ;
     margin-right: 20px;
 }
-
-ul {
+.meniu {
     list-style: none;
     background-color: #403aff;
     width: 100%;
@@ -46,13 +45,25 @@ ul {
 
 }
 
-ul li {
+ul {
+    list-style: none;
+    background-color: #403aff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    min-height: 36px;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 0px 15px 5px black;
+}
+
+.meniu li {
     float: left;
     padding: 2px;
 
 }
 
-ul li:hover {
+.meniu li:hover {
     background-color: #99FF00;
 
 }
